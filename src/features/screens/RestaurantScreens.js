@@ -1,22 +1,17 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { ActivityIndicator, MD2Colors } from "react-native-paper";
-import { FlatList, View } from "react-native";
-import { Searchbar } from "react-native-paper";
+import { FlatList } from "react-native";
 import RestaurantInfoCard from "../components/RestaurantInfoCard";
-import {
-  ActivityLoadingView,
-  SafeArea,
-  SearchView,
-} from "./RestaurantScreensStyles";
+import { ActivityLoadingView, SafeArea } from "./RestaurantScreensStyles";
 import { RestaurantContext } from "../../services/restaurants/RestaurantContext";
+import { Search } from "../components/SearchComponent";
 
 const RestaurantSceens = () => {
   const { isLoading, error, restaurants } = useContext(RestaurantContext);
+
   return (
     <SafeArea>
-      <SearchView>
-        <Searchbar />
-      </SearchView>
+      <Search />
       {isLoading && (
         <ActivityLoadingView>
           <ActivityIndicator

@@ -14,11 +14,13 @@ export const RestaurantCard = styled(Card)`
 
 export const Rating = styled(View)`
   flex-direction: row;
+  background-color: ${(props) => props.theme.colors.bg.primary};
 `;
 
 export const RatingOpen = styled(View)`
   flex-direction: row;
   justify-content: space-between;
+  background-color: ${(props) => props.theme.colors.bg.primary};
 `;
 
 export const Icon = styled(Image)`
@@ -29,4 +31,5 @@ export const Icon = styled(Image)`
 export const RestaurantClosingDetails = styled(View)`
   flex-direction: row;
   justify-content: space-between;
+  background-color: ${(props) => props.theme.colors.bg.primary};
 `;

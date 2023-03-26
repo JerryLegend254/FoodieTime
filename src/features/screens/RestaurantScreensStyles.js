@@ -9,10 +9,12 @@ export const SafeArea = styled(SafeAreaView)`
 
 export const SearchView = styled(View)`
   padding: ${(props) => props.theme.space[3]};
+  background-color: ${(props) => props.theme.colors.bg.primary};
 `;
 
 export const ActivityLoadingView = styled(View)`
   flex: 1;
   justify-content: center;
   align-items: center;
+  background-color: ${(props) => props.theme.colors.bg.primary};
 `;
