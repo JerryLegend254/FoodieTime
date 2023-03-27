@@ -14,6 +14,9 @@ import {
   RestaurantClosingDetails,
 } from "./RestaurantInfoCardStyles";
 
+import { AddressText } from "./RestaurantInfoCardStyles";
+
+//Creating a RestaurantInfoCard component that receives a restaurant(details)
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Some Restaurant",
@@ -53,7 +56,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
               </Spacer>
             </RestaurantClosingDetails>
           </RatingOpen>
-          <Text variant="label">{address}</Text>
+          <AddressText>{address}</AddressText>
         </Card.Content>
       </RestaurantCard>
     </ListView>

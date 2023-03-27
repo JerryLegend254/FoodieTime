@@ -1,4 +1,4 @@
-import { View, Image } from "react-native";
+import { Text, View, Image } from "react-native";
 import { Card } from "react-native-paper";
 import styled from "styled-components";
 
@@ -32,4 +32,8 @@ export const RestaurantClosingDetails = styled(View)`
   flex-direction: row;
   justify-content: space-between;
   background-color: ${(props) => props.theme.colors.bg.primary};
+`;
+
+export const AddressText = styled(Text)`
+  font-family: ${(props) => props.theme.fonts.monospace};
 `;
